@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+    <style>
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(174, 173, 173);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            width: 100vw;
+            height: 5rem;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input{
+            width: 90vw;
+            border-radius: 2px;
+            border: none;
+            margin: 1px;
+        }
+
+        button{
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(67, 67, 176);
+            color: white;
+            cursor: pointer;
+            transition: 1s ease;
+        }
+
+        button:hover{
+            color: rgb(67, 67, 176);
+            background-color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Sign-Up</h1>
+
+    <div class="container">
+        <form method="POST">
+            <input type="text" name="user" placeholder="Enter your userName..">
+            <br>
+            <input type="text" name="password1" placeholder="Enter your password..">
+            <br>
+            <input type="text" name="password2" placeholder="Confirm your password..">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <a href="/">Login</a>
+
+</body>
+
+</html>
